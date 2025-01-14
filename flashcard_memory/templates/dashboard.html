@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{username}}!</h1>
+    <p>What would you like to do?</p>
+    <ul>
+        {% if user_decks %}
+        <li>
+            <p>Your Existing Decks:</p>
+            <ul>
+                {% for deck in user_decks %}
+                {% endfor %}
+            </ul>
+        </li>
+        {% else %}
+            <li><p>You have no decks yet.</p></li>
+        {% endif %}
+    </ul>
+</body>
+</html>

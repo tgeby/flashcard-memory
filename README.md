@@ -11,3 +11,5 @@ source venv/bin/activate
 pip3 install django
 ```
 
+The project wide templates folder is linked. If template folders specific to certain apps are added, they will need to be linked.
+
