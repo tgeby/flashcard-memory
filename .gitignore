@@ -1,0 +1,4 @@
+
+flashcard_memory/db.sqlite3
+*.pyc
+/venv
